@@ -1,0 +1,21 @@
+name: Deploy Laravel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: SSH Deploy
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: 103.160.107.245
+          username: ssingh
+          password: YOUR_PASSWORD
+          script: |
+            cd /var/www/laravel-crud
+            ./deploy.sh

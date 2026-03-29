@@ -15,7 +15,7 @@ jobs:
         with:
           host: 103.160.107.245
           username: ssingh
-          password: YOUR_PASSWORD
+          password: ssingh
           script: |
             cd /var/www/laravel-crud
             ./deploy.sh

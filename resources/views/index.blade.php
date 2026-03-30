@@ -17,6 +17,7 @@
 
     <div class="container mt-3">
         <h3>Linking Huts CRUD project</h3>
+        <h2 style="color:red;">DEPLOY TEST – {{ now() }}</h2>
         <p id="res_panel">Click on the button and proceed </p>
         <button id="NewModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
             Add Employee
